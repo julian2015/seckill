@@ -20,7 +20,7 @@ public interface SeckillDao {
 	 * @param @param seckillId
 	 * @param @param killTime
 	 * @param @return    设定文件 
-	 * @return int    返回类型 
+	 * @return int   如果更新行数>1，表示更新行数
 	 */
 	int reduceNumber(long seckillId, Date killTime);
 	
@@ -36,11 +36,11 @@ public interface SeckillDao {
 	/**
 	 * @Title: queryAll 
 	 * @Description: 根据偏移量查询秒杀商品列表 
-	 * @param @param offet
+	 * @param @param offset
 	 * @param @param limit
 	 * @param @return    设定文件 
 	 * @return Seckill    返回类型 
 	 */
-	<List>Seckill queryAll(int offet, int limit);
+	<List>Seckill queryAll(int offset, int limit);
 
 }
