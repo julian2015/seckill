@@ -1,17 +1,20 @@
 package org.seckill.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
- * 
  * @ClassName: SuccessKilled 
  * @Description: success to killed 
  * @author liangJun 
  * @date 2016年8月4日 下午4:42:31 
- *
  */
-public class SuccessKilled {
+public class SuccessKilled implements Serializable{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1505208718198140026L;
 	/*商品库存ID*/
 	private long seckillId;
 	/*用户手机号*/
