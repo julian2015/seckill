@@ -1,16 +1,20 @@
 package org.seckill.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
- * 
  * @ClassName: Seckill 
  * @Description: 秒杀信息
  * @author liangJun 
  * @date 2016年8月4日 下午4:50:53 
- *
  */
-public class Seckill {
+public class Seckill implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4003284654517958808L;
+
 	/*商品库存Id*/
 	private long seckillId;
 	
