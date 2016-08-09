@@ -10,8 +10,9 @@ import java.util.Date;
  * @date 2016年8月4日 下午4:50:53 
  */
 public class Seckill implements Serializable{
+	
 	/**
-	 * 
+	 * 自动生成序列号
 	 */
 	private static final long serialVersionUID = -4003284654517958808L;
 

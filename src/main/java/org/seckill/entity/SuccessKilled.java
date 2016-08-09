@@ -12,17 +12,22 @@ import java.util.Date;
 public class SuccessKilled implements Serializable{
 
 	/**
-	 * 
+	 * 自动生成序列号
 	 */
 	private static final long serialVersionUID = -1505208718198140026L;
+	
 	/*商品库存ID*/
 	private long seckillId;
+	
 	/*用户手机号*/
 	private long userPhone;
+	
 	/*状态标示：－1:无效 0:成功 1:已付款 2:已发货*/
 	private short state;
+	
 	/*创建时间*/
 	private Date createTime;
+	
 	/*一个秒杀seckill对应多个成功记录*/
 	private Seckill seckill;
 	
